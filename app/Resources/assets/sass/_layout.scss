@@ -1,0 +1,83 @@
+//
+// Layout
+// --------------------------------------------------
+
+.page{
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.site-wrapper{
+  min-height:100%;
+  height: 100%!important;
+  margin-bottom: -$footer-height;
+  padding-bottom: $nav-height;
+}
+
+.inside-full-height {
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.col-sm-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+  vertical-align: top;
+}
+
+.row-height {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom:$footer-height;
+}
+
+#main-container{
+  height:100%;
+  h2{
+    margin-top:0;
+  }
+}
+
+#site-container {
+  position: relative;
+  width:100%;
+  min-height: 100%;
+  height: 100%;
+  margin:0;
+}
+
+#site-footer {
+  height: $footer-height;
+  background-color: $footer-bg-color;
+  color: $footer-color;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  p{
+    margin:9px 0 0 0;
+  }
+}
+
+.content-left{
+  background-color: $left-menu-bg-color;
+  color: $left-menu-color;
+}
+
+.content-main{
+  background-color: $main-bg-color;
+  color: $main-color;
+  height:100%;
+}
+
+#disclaimer {
+  font-size:0.95em;
+  text-align: justify;
+  margin:15px 0;
+  letter-spacing: 1px;
+}

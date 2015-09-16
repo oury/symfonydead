@@ -1,0 +1,16 @@
+<script src="{{ asset('bower_components/requirejs/require.js') }}"></script>
+<script>
+    requirejs.config({
+        baseUrl: '{{ asset('assets/js') }}',
+        paths: {
+            jquery: '{{ asset('bower_components/jquery/dist/jquery.min') }}',
+            bootstrap: '{{ asset('bower_components/bootstrap/dist/js/bootstrap.min') }}',
+            tableDnD: '{{ asset('bower_components/TableDnD/dist/jquery.tablednd.min') }}'
+        },
+        shim: {
+            bootstrap: ['jquery'],
+            tableDnD: ['jquery']
+        }
+    });
+    require(['common']);
+</script>

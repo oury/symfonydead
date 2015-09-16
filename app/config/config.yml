@@ -6,7 +6,13 @@ imports:
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: en
+    locale: fr
+    locales: [fr, en]
+    database_prefix: dead_
+    app_name: "Dead better"
+    app_version: "0.0.1"
+    mail_noreply: "maourydiallo@gmail.com"
+    mail_admin: "maourydiallo@gmail.com"
 
 framework:
     #esi:             ~
@@ -35,6 +41,11 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources: ['bootstrap_3_layout.html.twig']
+    globals:
+        app_name:    "%app_name%"
+        app_version: "%app_version%"
 
 # Assetic Configuration
 assetic:

@@ -1,0 +1,36 @@
+//
+// Navigation
+// --------------------------------------------------
+
+.navbar-right {
+  margin-right:0;
+}
+
+#navbar-main {
+  a{
+    color:#fff;
+    background-color:transparent!important;
+    font-size:0.85em;
+    text-transform: uppercase;
+  }
+}
+
+.brand-menu{
+  li:hover{
+    background-color: $brand-orange-on-black;
+  }
+}
+
+#nav-admin {
+  h2{
+    margin: 10px 0;
+    font-size: 1.3em;
+  }
+  ul{
+    li{
+      a{
+        padding: 2px 0;
+      }
+    }
+  }
+}
